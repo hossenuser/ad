@@ -5,6 +5,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   web:
     runs-on: ubuntu-latest
@@ -78,3 +81,24 @@ jobs:
           path: |
             desktop/release/*.exe
             desktop/release/*.dmg
+
+  release:
+    needs: [android, desktop]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: MH-Apps-Gallery-*
+          path: out
+          merge-multiple: true
+      - name: Publish downloads as a GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls -lR out
+          [ -f out/app-debug.apk ] && mv out/app-debug.apk out/MH-Apps-Gallery.apk
+          gh release create "build-${{ github.run_number }}" out/* \
+            --repo "${{ github.repository }}" \
+            --title "MH Apps Gallery build ${{ github.run_number }}" \
+            --notes "Android APK, Windows EXE and macOS DMG. Catalog is live-synced with mhappsgallery.blogspot.com." \
+            --latest
