@@ -1,0 +1,16 @@
+{
+  "name": "MH Apps Gallery — Your Apps & Software Hub",
+  "short_name": "MH Apps",
+  "description": "Browse verified apps, tools, drivers and guides from mhappsgallery.blogspot.com. Works online and offline with monthly software updates.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#05080f",
+  "theme_color": "#05080f",
+  "categories": ["productivity", "utilities", "shopping"],
+  "icons": [
+    { "src": "/images/mh-logo.png", "sizes": "1254x1254", "type": "image/png", "purpose": "any" },
+    { "src": "/images/mh-logo.png", "sizes": "1254x1254", "type": "image/png", "purpose": "maskable" }
+  ]
+}

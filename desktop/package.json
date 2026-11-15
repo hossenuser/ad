@@ -1,0 +1,20 @@
+{
+  "name": "mh-apps-gallery-desktop",
+  "productName": "MH Apps Gallery",
+  "version": "2.3.0",
+  "description": "MH Apps Gallery - Your Apps & Software Hub",
+  "author": "MH Apps Gallery",
+  "main": "main.cjs",
+  "scripts": { "start": "electron .", "dist": "electron-builder" },
+  "devDependencies": { "electron": "^33.2.0", "electron-builder": "^25.1.8" },
+  "build": {
+    "appId": "com.mhappsgallery.desktop",
+    "productName": "MH Apps Gallery",
+    "directories": { "output": "release", "buildResources": "build" },
+    "files": ["main.cjs", "app/**/*", "package.json"],
+    "win": { "icon": "build/icon.ico", "target": [{ "target": "nsis", "arch": ["x64"] }, { "target": "portable", "arch": ["x64"] }], "artifactName": "MH-Apps-Gallery-${version}-win-${arch}.${ext}" },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true, "createDesktopShortcut": true },
+    "mac": { "icon": "build/icon.png", "target": ["dmg"], "category": "public.app-category.utilities", "artifactName": "MH-Apps-Gallery-${version}-mac-${arch}.${ext}" },
+    "linux": { "icon": "build/icon.png", "target": ["AppImage"], "category": "Network", "artifactName": "MH-Apps-Gallery-${version}-linux.${ext}" }
+  }
+}

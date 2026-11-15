@@ -1,0 +1,342 @@
+export interface CatalogItem {
+  id: number;
+  name: string;
+  title: string;
+  image: string;
+  category: string;
+  date: string;
+  url: string;
+  platform: string;
+  format: string;
+  license: string;
+  description: string;
+  featured: boolean;
+}
+
+export const catalog: CatalogItem[] = [
+  {
+    "id": 1,
+    "name": "Microsoft .NET Framework 3.5",
+    "title": "Microsoft .NET Framework 3.5 offline installer for pc (Full Package) Download Windows 10/11",
+    "image": "https://hoanghamobile.com/tin-tuc/wp-content/uploads/2025/01/tai-Net-Framework-3-5-1.jpg",
+    "category": "Windows",
+    "date": "2026-10-29",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/microsoft-net-framework-35-offline.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "Microsoft .NET Framework 3.5 Service pack 1 (Full Package) Platform: Windows 10 /…",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Remote Mouse",
+    "title": "Remote Mouse lets you use your iPhone, iPad, or Android device as a wireless mouse, keyboard, and trackpad. Control your Mac, Windows, or Linux computer",
+    "image": "https://www.ilovefreesoftware.com/wp-content/uploads/2014/02/IMG_2618.png",
+    "category": "Tools",
+    "date": "2026-10-29",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/remote-mouse-lets-you-use-your-iphone.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "Remote Mouse Platform: Windows 10 / Windows 11 License: [Free /Paid] File Format:…",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Mp3tag",
+    "title": "Mp3tag latest version for Windows Download",
+    "image": "https://cdn.neowin.com/news/images/uploaded/2025/08/1755271200_mp3tag.webp",
+    "category": "Tools",
+    "date": "2026-10-29",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/mp3tag-latest-version-for-windows.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "Mp3tag latest version for Windows Download the latest Development Build to use new features and bugfixes…",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "GIGABYTE H310M DS2 2.0 Drivers",
+    "title": "GIGABYTE H310M DS2 2.0 Motherboard Driver DVD Windows 7/8/10/11 Gigabyte Gigabyte Ultra Durable Motherboard",
+    "image": "https://static.gigabyte.com/StaticFile/Image/Global/9947f980c2a02d457ff26f2684716ab8/ProductRemoveBg/19848",
+    "category": "Drivers",
+    "date": "2026-10-29",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/gigabyte-h310m-ds2-20-motherboard.html",
+    "platform": "Windows 7 / 8 / 10 / 11",
+    "format": "ZIP",
+    "license": "Free",
+    "description": "GIGABYTE H310M DS2 2.0 Platform: Windows 10 / Windows 11 License: [Free /Paid]…",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "name": "WinRAR",
+    "title": "WinRAR is a utility designed for 32/64-bit Windows systems that serves as a version of RAR Archiver.",
+    "image": "https://sokoolz.com/wp-content/uploads/2015/07/Winrar-package.png",
+    "category": "Tools",
+    "date": "2026-10-28",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/winrar-is-utility-designed-for-3264-bit.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "WinRAR Platform: Windows 10 / Windows 11 License: [Free /Paid] File Format: ZIP /…",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Neat Download Manager",
+    "title": "Neat Download Manager is a free Internet Download Manager for Windows 7/8 /10/11 or higher) and Windows (Windows 7 or higher)",
+    "image": "https://i.ytimg.com/vi/XggLnksQgLY/maxresdefault.jpg",
+    "category": "Tools",
+    "date": "2026-10-28",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/neat-download-manager-is-free-internet.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "Neat Download Manager Platform: Windows 10 / Windows 11 License: [Free /Paid] File…",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "name": "Rufus USB Boot Maker",
+    "title": "Rufus Create bootable USB drives the easy way",
+    "image": "https://cdn.neowin.com/news/images/uploaded/2026/04/1777551269_rufus.webp",
+    "category": "Tools",
+    "date": "2026-10-28",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/rufus-create-bootable-usb-drives-easy.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "Rufus Create bootable USB drives Platform: Windows 10 / Windows 11 License: [Free…",
+    "featured": true
+  },
+  {
+    "id": 8,
+    "name": "Wondershare UniConverter 2026",
+    "title": "Wondershare UniConverter 2026 Download for Windows",
+    "image": "https://www.trucnet.com/wp-content/uploads/2026/05/Wondershare-UniConverter.jpg",
+    "category": "Windows",
+    "date": "2026-10-28",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/wondershare-uniconverter-2026-download.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Paid",
+    "description": "Wondershare UniConverter 2026 Platform: Windows 10 / Windows 11 License: [Free…",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "name": "Any Video Converter 2026",
+    "title": "Any Video Converter 2026 Download for Windows",
+    "image": "https://www.videoconverterfactory.com/video-converter/images/item2.png",
+    "category": "Windows",
+    "date": "2026-10-28",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/any-video-converter-2026-download-for.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "Any Video Converter 2026 Platform: Windows 10 / Windows 11 License: [Free /Paid]…",
+    "featured": false
+  },
+  {
+    "id": 10,
+    "name": "Lightshot Screenshot Tool",
+    "title": "LIGHTSHOT SCREENSHOT TOOL WINDOWS",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnm17Vs4h8VPUVStKujpiVACZg8cBxuNik5HOHcy5IaatAHeLS2BeZsyq6&amp;s=10",
+    "category": "Windows",
+    "date": "2026-10-28",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/lightshot-screenshot-tool-windows.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "⏬ Download: ⏬ LIGHTSHOT SCREENSHOT TOOL Platform: Windows 10 / Windows 11 License:…",
+    "featured": false
+  },
+  {
+    "id": 11,
+    "name": "MiniTool Partition Wizard",
+    "title": "MiniTool Partition Wizard Free Download for Windows",
+    "image": "https://file-cdn.gvgmall.com/product/20181212100103.png",
+    "category": "Tools",
+    "date": "2026-10-28",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/minitool-partition-wizard-free-download.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "⏬ Download: ⏬ MiniTool Partition Wizard Platform: Windows 10 / Windows 11 License:…",
+    "featured": false
+  },
+  {
+    "id": 12,
+    "name": "ESONIC Motherboard Drivers",
+    "title": "ESONIC Motherboard Driver and Utilities",
+    "image": "https://bondhucomputer.com/wp-content/uploads/2025/12/Esonic.png",
+    "category": "Drivers",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/download-esonic-is-computer-hardware.html",
+    "platform": "Windows 7 / 8 / 10 / 11",
+    "format": "ZIP",
+    "license": "Free",
+    "description": "DOWNLOAD ESONIC Motherboard Driver and Utilities Esonic is a computer hardware brand that markets generic and budget-oriented motherboards, along…",
+    "featured": false
+  },
+  {
+    "id": 13,
+    "name": "EaseUS Data Recovery Wizard",
+    "title": "EaseUS Data Recovery Wizard Free",
+    "image": "https://5.imimg.com/data5/SELLER/Default/2021/1/JK/NJ/NW/22640697/easeous-data-recovery-wizard-pro-software-latest-version-500x500.png",
+    "category": "Tools",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/easeus-data-recovery-wizard-free.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "EaseUS Data Recovery Wizard Free Platform: Windows 10 / Windows 11 License: [Free…",
+    "featured": false
+  },
+  {
+    "id": 14,
+    "name": "Delete Temporary Files (Guide)",
+    "title": "Delete Windows temporary files",
+    "image": "https://pngimg.com/uploads/windows_logos/windows_logos_PNG9.png",
+    "category": "Guides",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/how-to-delete-temporary-files-ever.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "TemporaryDelete.exe is a lightweight Windows utility from Temporary_Delete.exe developer that quickly finds and removes temporary files, caches, and…",
+    "featured": false
+  },
+  {
+    "id": 15,
+    "name": "Bijoy Bayanno",
+    "title": "Download Bijoy Bayanno for Windows",
+    "image": "https://i.ytimg.com/vi/03JQyuyjepw/maxresdefault.jpg",
+    "category": "Windows",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/download-bijoy-bayanno-for-windows.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "Download Microsoft .NET Framework 3.5 Download বিজয় বাংলা সফটওয়্যার ইন্সটল ও অ্যাকটিভ করার পদ্ধতি আমাদের সফটওয়্যার গুলো বিবরণ থেকে অপারেটিং সিস্টেম…",
+    "featured": false
+  },
+  {
+    "id": 16,
+    "name": "HP Smart Tank 520 Driver",
+    "title": "HP Smart tank 520 driver windows 11",
+    "image": "https://electroconnect.in/image/cache/catalog/HP-Smart-Tank-520-All-in-One-Colour-Printer-1-Extra-Black-Ink-Bottle-11-/HP-Smart-Tank-520-All-in-One-Colour-Printer-1-Extra-Black-Ink-Bottle-11-Year-Ext-800x800.jpg",
+    "category": "Drivers",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/hp-smart-tank-520-driver-windows-11.html",
+    "platform": "Windows 7 / 8 / 10 / 11",
+    "format": "ZIP",
+    "license": "Free",
+    "description": "Download HP app to complete setup and support Recommended Install HP app to setup and use your Printer HP app will help you connect your printer,…",
+    "featured": false
+  },
+  {
+    "id": 17,
+    "name": "Internet Download Manager",
+    "title": "Internet Download Manager (IDM) download latest version",
+    "image": "https://cdn.neowin.com/news/images/uploaded/2025/04/1745403385_idm.jpg",
+    "category": "Tools",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/internet-download-manager-idm-download.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "Internet Download Manager (IDM) download latest version Platform: Windows 10 /…",
+    "featured": true
+  },
+  {
+    "id": 18,
+    "name": "TranslucentTB",
+    "title": "Translucenttb",
+    "image": "https://store-images.s-microsoft.com/image/apps.55342.14207443949651364.14d58b87-611d-43f5-96e3-f7ac6427a4b6.55250c27-cafd-4f7f-9e71-357d60971b6c",
+    "category": "Windows",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/translucenttb.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": " Download v2026.2 Make your taskbar feel native and gorgeous. TranslucentTB brings Acrylic, Blur, Transparent, and Opaque styles to your Windows…",
+    "featured": false
+  },
+  {
+    "id": 19,
+    "name": "Google TV ISO for PC",
+    "title": "Google TV iso file Download (Turn Any PC into a Smart TV)",
+    "image": "https://i.ytimg.com/vi/fyMEKEzQWrk/maxresdefault.jpg",
+    "category": "Windows",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/google-tv-on-usb-drive-turn-any-pc-into.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "Downloads Required Install Google TV on a USB Drive (Turn Any PC into a Smart TV) Want to turn any computer into a smart TV using just a USB drive?…",
+    "featured": false
+  },
+  {
+    "id": 20,
+    "name": "SuperCopier Beta",
+    "title": "SuperCopier Beta Windows 7/10/11 Download",
+    "image": "https://pic.clubic.com/v1/images/1499261/raw",
+    "category": "Tools",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/supercopier-beta.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "DOWNLOAD Introducing SuperCopier SuperCopier is easy to use, but above all, it offers numerous options for managing your copies and transfers…",
+    "featured": false
+  },
+  {
+    "id": 21,
+    "name": "Bangla Voice Clock",
+    "title": "Bangla Voice Clock",
+    "image": "https://store-images.s-microsoft.com/image/apps.32620.14471316652188688.a8c8353d-4a88-4673-b904-2bb43c2ae797.f0c96bf1-3a86-492b-a654-ef7d2422d7c4",
+    "category": "Windows",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/bangla-voice-clock.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "Download Bangla Voice Clock (বাংলা ভয়েস ক্লক) says the time aloud in Bangla, the way it is said in Bangladesh. It sits in the system tray and…",
+    "featured": false
+  },
+  {
+    "id": 22,
+    "name": "VLC Media Player",
+    "title": "VLC Media Player",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/VLC_icon.png?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=original",
+    "category": "Windows",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/vlc-media-player.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "Download VLC for Windows VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as…",
+    "featured": false
+  },
+  {
+    "id": 23,
+    "name": "Windows Defender Control",
+    "title": "Windows Defender-control",
+    "image": "https://www.techspot.com/images2/downloads/topdownload/2021/02/2021-02-11-ts3_thumbs-de0.png",
+    "category": "Tools",
+    "date": "2026-10-27",
+    "url": "https://mhappsgallery.blogspot.com/2026/10/windows-defender-bolcker.html",
+    "platform": "Windows 10 / 11",
+    "format": "EXE",
+    "license": "Free",
+    "description": "DOWNLOAND Defender Control is a popular, lightweight portable freeware designed to completely disable or enable Windows Defender (Microsoft Defender)…",
+    "featured": false
+  }
+];
+
+export const categories = ["All","Windows","Tools","Drivers","Games","Android","Guides"] as const;
+export type Category = (typeof categories)[number];
