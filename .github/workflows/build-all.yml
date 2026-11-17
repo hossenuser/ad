@@ -91,6 +91,15 @@ jobs:
           pattern: MH-Apps-Gallery-*
           path: out
           merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          name: web-dist
+          path: webout
+      - name: Package the web app (HTML)
+        run: |
+          cd webout && zip -qr ../out/MH-Apps-Gallery-web.zip . && cd ..
+          cp webout/index.html out/MH-Apps-Gallery-app.html
+          ls -l webout/index.html
       - name: Publish downloads as a GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
