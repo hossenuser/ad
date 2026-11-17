@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
+import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../models/blog_post.dart';
 import '../main.dart';
@@ -31,16 +31,18 @@ class PostScreen extends StatelessWidget {
           Text('Published: ${post.published!.toLocal().toString().split(' ').first}',
               style: const TextStyle(color: Colors.white54, fontSize: 12)),
         const SizedBox(height: 18),
-        Html(
-          data: post.content,
-          style: {
-            'body': Style(color: Colors.white.withOpacity(.88),
-                fontSize: FontSize(15), lineHeight: LineHeight(1.5)),
-            'a': Style(color: MhAppsGalleryApp.cyan),
-            'h1,h2,h3': Style(color: Colors.white, fontWeight: FontWeight.bold),
-            'img': Style(width: Width(100, Unit.percent)),
+        HtmlWidget(
+          post.content,
+          textStyle: TextStyle(
+              color: Colors.white.withOpacity(.88), fontSize: 15, height: 1.5),
+          customStylesBuilder: (e) {
+            if (e.localName == 'a') return {'color': '#22D3EE'};
+            if (const {'h1', 'h2', 'h3'}.contains(e.localName)) {
+              return {'color': '#FFFFFF', 'font-weight': 'bold'};
+            }
+            return null;
           },
-          onLinkTap: (url, _, __) { if (url != null) _open(url); },
+          onTapUrl: (url) async { await _open(url); return true; },
         ),
         const SizedBox(height: 20),
         FilledButton.icon(
