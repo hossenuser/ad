@@ -22,7 +22,7 @@ jobs:
           channel: 'stable'
       - name: Initialize native platform runners
         run: |
-          flutter create --platforms=android .
+          flutter create --platforms=android,ios,windows,macos .
           cp -f android_manifest_template/AndroidManifest.xml android/app/src/main/AndroidManifest.xml
       - run: flutter pub get
       - run: dart run flutter_launcher_icons
@@ -41,7 +41,7 @@ jobs:
           channel: 'stable'
       - name: Initialize Windows runner & build .exe
         run: |
-          flutter create --platforms=windows .
+          flutter create --platforms=android,ios,windows,macos .
           flutter pub get
           dart run flutter_launcher_icons
           flutter build windows --release
@@ -62,7 +62,7 @@ jobs:
           channel: 'stable'
       - name: Initialize macOS runner & build .dmg
         run: |
-          flutter create --platforms=macos .
+          flutter create --platforms=android,ios,windows,macos .
           flutter pub get
           dart run flutter_launcher_icons
           flutter build macos --release
@@ -84,7 +84,7 @@ jobs:
           channel: 'stable'
       - name: Initialize iOS runner & build unsigned IPA
         run: |
-          flutter create --platforms=ios .
+          flutter create --platforms=android,ios,windows,macos .
           flutter pub get
           dart run flutter_launcher_icons
           flutter build ios --release --no-codesign
